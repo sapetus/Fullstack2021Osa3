@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ui": "rm -rf build && cd ../../Misc/puhelinluetteloFrontend/ && npm run build --prod && cp -r build ../../'Palautettavat tehtävät'/Fullstack2021Osa3/"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,10 @@
   },
   "homepage": "https://github.com/sapetus/Fullstack2021Osa3#readme",
   "dependencies": {
+    "dotenv": "^9.0.2",
     "express": "^4.17.1",
+    "mongoose": "^5.12.8",
+    "mongoose-unique-validator": "^2.0.3",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
