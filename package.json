@@ -7,7 +7,8 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:ui": "rm -rf build && cd ../../Misc/puhelinluetteloFrontend/ && npm run build --prod && cp -r build ../../'Palautettavat tehtävät'/Fullstack2021Osa3/"
+    "build:ui": "rm -rf build && cd ../../Misc/puhelinluetteloFrontend/ && npm run build --prod && cp -r build ../../'Palautettavat tehtävät'/Fullstack2021Osa3/",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "eslint": "^7.26.0",
     "nodemon": "^2.0.7"
   }
 }
